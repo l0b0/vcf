@@ -102,7 +102,7 @@ for file in *
 do
     verbose_echo "Processing file: $file"
 
-    if grep "${grep_options[@]}" -- "$file"
+    if grep "${grep_options[@]}" -- "$file" &>/dev/null
     then
         cat -- "$file"
     fi
