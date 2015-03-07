@@ -88,8 +88,8 @@ do
             else
                 verbose_echo "Got a search term: $1"
                 grep_options+=(-e "$1")
+                shift
             fi
-            shift
             ;;
     esac
 done
