@@ -4,7 +4,7 @@
 #        vcf.sh - vCard find
 #
 # SYNOPSIS
-#        vcf.sh [OPTION]... [--] FILE...
+#        vcf.sh [OPTION]... [--] REGEX FILE...
 #
 # DESCRIPTION
 #        Prints the matching vCards. This works on the basis of BEGIN:VCARD
@@ -27,7 +27,7 @@
 #        https://github.com/l0b0/vcf/issues
 #
 # COPYRIGHT AND LICENSE
-#        Copyright (C) 2012 Victor Engmark
+#        Copyright (C) 2012, 2015 Victor Engmark
 #
 #        This program is free software: you can redistribute it and/or modify
 #        it under the terms of the GNU General Public License as published by
@@ -67,6 +67,7 @@ grep_options=(--ignore-case)
 
 while true
 do
+    [ $# -ne 0 ] || usage $ex_usage
     case $1 in
         -h|--help)
             usage
