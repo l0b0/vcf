@@ -3,6 +3,11 @@ vcf
 
 vCard find. Prints the vCards which are found with the given search terms.
 
+Install
+-------
+
+    git clone --recursive https://github.com/l0b0/vcf.git
+
 Usage
 -----
 
