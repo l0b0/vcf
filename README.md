@@ -1,6 +1,8 @@
 vcf
 ===
 
+**Now maintained at https://gitlab.com/victor-engmark/vcf**
+
 vCard find. Prints the vCards which are found with the given search terms.
 
 Install
